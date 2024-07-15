@@ -1,11 +1,11 @@
 ## Docker commands used to build the application 
-docker build -t techtrend .  
+docker build -t techtrends .  
 
 ## Docker commands used to run the application
 docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
-docker logs 203c66e1207a
+docker logs 295280dd7cd4
 
 ## Logs from the container running the TechTrends application
  * Serving Flask app 'app' (lazy loading)
@@ -13,36 +13,26 @@ docker logs 203c66e1207a
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-2024-07-14 15:39:26,707 - werkzeug - WARNING -  * Running on all addresses.
+2024-07-15 15:47:27,576 - werkzeug - WARNING -  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2024-07-14 15:39:26,708 - werkzeug - INFO -  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-2024-07-14 15:40:42,764 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:42] "GET / HTTP/1.1" 200 -
-2024-07-14 15:40:43,168 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:43] "GET /static/css/main.css HTTP/1.1" 200 -
-2024-07-14 15:40:43,356 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:43] "GET /favicon.ico HTTP/1.1" 404 -
-(.venv) geminius@UdacityStudy:~/Documents/Dev/Udacity/TestPython1/nd064_course_1/project/techtrends$ docker logs 203c66e1207a
- * Serving Flask app 'app' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
-2024-07-14 15:39:26,707 - werkzeug - WARNING -  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-2024-07-14 15:39:26,708 - werkzeug - INFO -  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-2024-07-14 15:40:42,764 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:42] "GET / HTTP/1.1" 200 -
-2024-07-14 15:40:43,168 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:43] "GET /static/css/main.css HTTP/1.1" 200 -
-2024-07-14 15:40:43,356 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 15:40:43] "GET /favicon.ico HTTP/1.1" 404 -
-2024-07-14 16:02:20,357 - app - INFO - Article 2020 CNCF Annual Report is retrieved
-2024-07-14 16:02:20,361 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:20] "GET /1 HTTP/1.1" 200 -
-2024-07-14 16:02:20,473 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:20] "GET /static/css/main.css HTTP/1.1" 304 -
-2024-07-14 16:02:24,558 - app - INFO - Article Kubernetes v1.20 Release Notes is retrieved
-2024-07-14 16:02:24,559 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:24] "GET /3 HTTP/1.1" 200 -
-2024-07-14 16:02:24,746 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:24] "GET /static/css/main.css HTTP/1.1" 304 -
-2024-07-14 16:02:28,214 - app - DEBUG - About US page is retrieved
-2024-07-14 16:02:28,217 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:28] "GET /about HTTP/1.1" 200 -
-2024-07-14 16:02:28,588 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:28] "GET /static/css/main.css HTTP/1.1" 304 -
-2024-07-14 16:02:32,280 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:32] "GET /create HTTP/1.1" 200 -
-2024-07-14 16:02:32,489 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:32] "GET /static/css/main.css HTTP/1.1" 304 -
-2024-07-14 16:02:46,434 - app - INFO - Article New Post Test is created
-2024-07-14 16:02:46,435 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:46] "POST /create HTTP/1.1" 302 -
-2024-07-14 16:02:46,441 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:46] "GET / HTTP/1.1" 200 -
-2024-07-14 16:02:46,593 - werkzeug - INFO - 172.17.0.1 - - [14/Jul/2024 16:02:46] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:47:27,576 - werkzeug - INFO -  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2024-07-15 15:48:27,977 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:27] "GET / HTTP/1.1" 200 -
+2024-07-15 15:48:28,296 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:48:30,870 - app - INFO - Article 2020 CNCF Annual Report is retrieved
+2024-07-15 15:48:30,878 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:30] "GET /1 HTTP/1.1" 200 -
+2024-07-15 15:48:31,038 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:48:35,225 - app - INFO - Article KubeCon + CloudNativeCon 2021 is retrieved
+2024-07-15 15:48:35,226 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:35] "GET /2 HTTP/1.1" 200 -
+2024-07-15 15:48:35,480 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:48:37,350 - app - DEBUG - About US page is retrieved
+2024-07-15 15:48:37,353 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:37] "GET /about HTTP/1.1" 200 -
+2024-07-15 15:48:37,521 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:37] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:48:51,042 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:51] "GET /create HTTP/1.1" 200 -
+2024-07-15 15:48:51,294 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:48:51] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:49:00,791 - app - INFO - Article Test creat new post is created
+2024-07-15 15:49:00,792 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:49:00] "POST /create HTTP/1.1" 302 -
+2024-07-15 15:49:00,816 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:49:00] "GET / HTTP/1.1" 200 -
+2024-07-15 15:49:01,076 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:49:01] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-07-15 15:49:06,816 - app - INFO - Article Test creat new post is retrieved
+2024-07-15 15:49:06,817 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:49:06] "GET /7 HTTP/1.1" 200 -
+2024-07-15 15:49:07,144 - werkzeug - INFO - 172.17.0.1 - - [15/Jul/2024 15:49:07] "GET /static/css/main.css HTTP/1.1" 304 -

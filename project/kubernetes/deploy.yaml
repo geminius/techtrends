@@ -28,20 +28,15 @@ spec:
         imagePullPolicy: IfNotPresent
         name: techtrends
         ## Expose the port the container is listening on.
-        ## For example, exposing the application port 6112 via TCP.
         ports:
         - containerPort: 3111
           protocol: TCP
         ## Define the rules for the liveness probes.
-        ## For example, verify the application on the main route `/`,
-        ## on application port 6112. If the application is not responsive, then the pod will be restarted automatically. 
         livenessProbe:
            httpGet:
              path: /healthz
              port: 3111
         ## Define the rules for the readiness probes.
-        ## For example, verify the application on the main route `/`,
-        ## on application port 6112. If the application is responsive, then traffic will be sent to this pod.
         readinessProbe:
            httpGet:
              path: /healthz
